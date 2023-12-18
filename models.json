@@ -84,6 +84,18 @@
     "sha256": "5ac3ba2eecc4f41d0cd65a5e6d875d38d4c3dd4ebb1161b85e5134817b484938"
   },
   {
+    "name": "Mixtral-Fusion-4x7B-Instruct",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "provider_url": "https://huggingface.co/mmnga/Mixtral-Fusion-4x7B-Instruct-v0.1",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/TheBloke/Mixtral-Fusion-4x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-fusion-4x7b-instruct-v0.1.Q8_0.gguf",
+      "https://modelscope.cn/api/v1/models/TabbyML/Mistral-7B/repo?FilePath=ggml/q8_0.v2.gguf"
+    ],
+    "sha256": "	6e65a50f1d9db1a44c78821348de0b3083d1b5c085be8727f4b0d1b593a3eda4"
+  },
+  {
     "name": "DeepseekCoder-1.3B",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
