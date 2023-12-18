@@ -93,7 +93,7 @@
       "https://huggingface.co/TheBloke/Mixtral-Fusion-4x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-fusion-4x7b-instruct-v0.1.Q8_0.gguf",
       "https://modelscope.cn/api/v1/models/TabbyML/Mistral-7B/repo?FilePath=ggml/q8_0.v2.gguf"
     ],
-    "sha256": "	6e65a50f1d9db1a44c78821348de0b3083d1b5c085be8727f4b0d1b593a3eda4"
+    "sha256": "6e65a50f1d9db1a44c78821348de0b3083d1b5c085be8727f4b0d1b593a3eda4"
   },
   {
     "name": "DeepseekCoder-1.3B",
